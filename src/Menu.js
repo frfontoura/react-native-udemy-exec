@@ -8,10 +8,19 @@ import Contador from './components/Contador';
 import Plataformas from './components/Plataformas';
 import ValidarProps from './components/ValidarProps';
 import Evento from './components/Evento';
-import Avo from './components/ComunicacaoDireta'
-import TextoSincronizado from './components/ComunicacaoIndireta'
+import Avo from './components/ComunicacaoDireta';
+import TextoSincronizado from './components/ComunicacaoIndireta';
+import ListaFlex from './components/ListaFlex';
+import Flex from './components/Flex';
 
 export default createDrawerNavigator({
+  Flex: {
+    screen: () => <Flex />
+  },
+  ListaFlex: {
+    screen: () => <ListaFlex />,
+    navigationOptions: { title: 'Lista Flex'}
+  },
   TextoSincronizado: {
     screen: () => <TextoSincronizado />,
     navigationOptions: { title: 'Texto Sincronizado'}
